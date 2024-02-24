@@ -2,11 +2,13 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import "./residents.css"
 import { useParams } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSpinner } from '@fortawesome/free-solid-svg-icons';
 
 const Temp = () => {
      const [residents, setResidents] = useState([]);
 
-     let urlId= useParams()
+     let urlId = useParams()
 
      useEffect(() => {
           const fetchData = async () => {
@@ -17,8 +19,14 @@ const Temp = () => {
                               const res = await axios.get(residentURL);
                               return res.data;
                          })
-                         
                     );
+                    if(residentsData.length===0){
+                         document.getElementById("loaderHomePage").style.display="none"
+                         window.alert("No Residents present in this Planet")
+                    }else{
+                         document.getElementById("detailsTable").style.display="flex"
+                         document.getElementById("loaderHomePage").style.display="none"
+                    }
                     setResidents(residentsData);
                } catch (error) {
                     console.error('Error fetching data:', error);
@@ -26,13 +34,12 @@ const Temp = () => {
           };
 
           fetchData();
-          // if(residents.length===0){
-          //      window.alert("No Residents present in this Planet")
-          // }
+
      }, [urlId.id]);
 
      return (
           <main>
+               <div id="loaderHomePage"><FontAwesomeIcon icon={faSpinner} spinPulse size="2xl" style={{color: "#63E6BE",}} /></div>
                {/* The table of the patient */}
                <div id="heading">
                     <span>RESIDENTS DETAILS</span>
@@ -46,7 +53,7 @@ const Temp = () => {
                               <th>Residence Gender</th>
                          </thead>
                          <tbody>
-                              {residents.map((data,id) => {
+                              {residents.map((data, id) => {
                                    return (
                                         <tr id="box" key={id}>
                                              <td>{data.name}</td>

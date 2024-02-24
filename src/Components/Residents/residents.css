@@ -1,3 +1,11 @@
+#loader{
+     color: white;
+     position: absolute;
+     top: 200px;
+     left: 45%;
+     font-size: 50px;
+}
+
 #heading{
      display: flex;
      justify-content: center;
@@ -15,7 +23,7 @@ body{
 }
 
 #detailsTable{
-     display: flex;
+     display: none;
      justify-content: center;
      align-items: center;
      background-color: black;
