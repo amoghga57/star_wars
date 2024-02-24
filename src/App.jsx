@@ -10,7 +10,7 @@ const App = () => {
             <Routes>
               <Route exact element={<Planets/>} path='/' />
               <Route element={<Residents/>} path='/residents/details/:id' />
-              <Route path="*" element={<Planets to="/" />} />
+              {/* <Route path="*" element={<Planets to="/" />} /> */}
             </Routes>
           
           </BrowserRouter>
