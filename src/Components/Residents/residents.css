@@ -1,4 +1,4 @@
-#loader{
+#loaderHomePage{
      color: white;
      position: absolute;
      top: 200px;
@@ -96,6 +96,11 @@ tr>td>button>a{
      }
      #searchBar>input{
           font-size: 10px;
+     }
+}
+@media screen and (max-width:500px) {
+     #loaderHomePage{
+        font-size: 30px;
      }
 }
 

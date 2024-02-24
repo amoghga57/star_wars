@@ -1,7 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import "./planets.css"
-// import hyper from "./star_war.mp4"
 import hyper from "./hyperspace.mp4"
 import logo from "./images.png"
 import solar from "./solar.jpg"
@@ -32,7 +31,7 @@ const Planets = () => {
         }
       })
       .catch(() => {
-        window.alert("Connect to Internet / Server down")
+        window.alert("Connect to Internet / Server down / Wait")
       })
 
   }, [Url,Details.length])
