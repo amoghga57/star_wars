@@ -1,22 +1,26 @@
-# Getting Started with Create React App
+# Getting Started with React Star War App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h2>Guide to Run Star War App locally</h2>
 
-
-## Create a clone of the repository in the File Explorer 
+## 1. Create a clone of the repository in the File Explorer 
 
 Select a respective folder  <br></br>
-Run the below command in command prompt/git Bash command prompt <br></br>
-git clone https://github.com/amoghga57/star_wars.git
+Open  the command prompt/git Bash command prompt & Run the below command   <br></br>
+$ ~    git clone https://github.com/amoghga57/star_wars.git
 
 
-### `npm start`
+### 2. Run the command `npm start`
 
-Runs the app in a Editor like Visual Studios <br></br>
+Runs the app in an Editor like Visual Studios <br></br>
 Open the Terminal and run the <b> npm start </b> command <br></br>
 
-The app will be located to local website [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The app will be redirected to the local website [http://localhost:3000](http://localhost:3000) to view the app in your browser.
 
+
+
+### To view the remote Star War App, click the below link
+
+ https://amoghga57.github.io/star_wars/
 
 
 
