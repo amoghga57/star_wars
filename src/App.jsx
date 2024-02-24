@@ -8,7 +8,7 @@ const App = () => {
     <div>
           <BrowserRouter basename="/star_wars">
             <Routes>
-              <Route exact element={<Planets/>} path='/star_wars' />
+              <Route exact element={<Planets/>} path='/' />
               <Route element={<Residents/>} path='/residents/details/:id' />
             </Routes>
           </BrowserRouter>

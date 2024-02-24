@@ -49,7 +49,7 @@ const Planets = () => {
       <div id="navigation">
         <nav>
           <img src={logo} alt="img" id="starwar" />
-          <img src={solar} alt="img" id="solar" height={200} width={1400} /> 
+          <img src={solar} alt="img" id="solar"  /> 
         </nav>
       </div>
       <div id="card_division">
